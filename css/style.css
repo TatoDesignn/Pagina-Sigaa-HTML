@@ -1,0 +1,153 @@
+:root{
+    --colorFondo: #fff;
+    --colorTextos: #000;
+    --colorBotones: #0874dc;
+    --colorUPB: #e80414;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../image/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.Cuadrado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header, main {
+    position: relative;
+    z-index: 2; 
+}
+
+header{
+    height: 100px;
+    padding: 32px;
+}
+
+header img{
+    width: 160px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Inicio {
+    background-color: var(--colorFondo);  
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px; 
+    text-align: center;
+}
+
+.Titulo{
+    width: 100%;
+    height: 80px;
+    background-color: var(--colorUPB);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Titulo h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--colorFondo);
+}
+
+.Inicio form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 15px;
+    font-size: 16px;
+    border: 0.1px solid #858585;
+    background-color: rgba(233, 233, 233, 0.7);
+    color: #fff;
+    border-radius: 2px;
+    outline: none;
+    margin-bottom: 20px;
+    width: 20.0rem;
+}
+
+.ButtonInicio {
+    background-color: var(--colorBotones);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 20.0rem;
+}
+
+.ButtonInicio:hover {
+    background-color: #0159ac;
+}
+
+.Inicio p {
+    color: #fff;
+    margin: 15px 0;
+}
+
+.Inicio a {
+    color: white;
+    text-decoration: none;
+}
+
+.Inicio a:hover {
+    text-decoration: underline;
+}
+
+.Check{
+    margin: 10px 0;
+}
+
+.Inicio label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.Texto{
+    width: 100%;
+    padding: 0 30px;
+}
+
+section.Inicio span {
+    font-size: 12px;
+    color: #8c8c8c;
+}
